@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Pixelify Sans', cursive;
+  user-select: none;
+  -webkit-app-region: drag;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: #8CC0EB;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease;
+}
+
+body.night .app {
+  background: #462C7D;
+}
+
+#calendar {
+  width: 330px;
+  height: 330px;
+  background: #FFB11E;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease, transform 0.1s ease;
+}
+
+body.night #calendar {
+  background: #D552A3;
+}
+
+#date {
+  font-size: 3.0rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 2px #0E96D6;
+  transition: color 0.5s ease, -webkit-text-stroke 0.5s ease;
+}
+
+body.night #date {
+  color: #ffffff;
+  -webkit-text-stroke: 2px #403062;
+}
+
+#time {
+  color: #ffffff;
+  font-size: 2.0rem;
+  transition: color 0.5s ease, -webkit-text-stroke 0.5s ease;
+}
+
+
+
+#sprite {
+  width: 200px;
+  height: 200px;
+  image-rendering: pixelated;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+  margin: -10px 0;
+  animation: idle 2.5s ease-in-out infinite;
+}
+
+#sprite.bounce {
+  animation: bounce 0.3s ease, idle 2.5s ease-in-out infinite;
+}
+
+@keyframes idle {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(0.9) translateY(5px); }
+  70%  { transform: scale(1.05) translateY(-5px); }
+  100% { transform: scale(1); }
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
