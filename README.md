@@ -37,7 +37,7 @@ electron-calendar-clock/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/electron-calendar-clock.git
+   git clone https://github.com/forborealis/electron-calendar-clock.git
    cd electron-calendar-clock
    ```
 
