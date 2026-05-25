@@ -1,5 +1,5 @@
 {
-  "name": "electron-calendar-clock",
+  "name": "compawnion",
   "version": "1.0.0",
   "description": "A pixel-art calendar and clock desktop widget",
   "author": "forborealis",
@@ -9,8 +9,8 @@
     "build": "electron-builder --win"
   },
   "build": {
-    "appId": "com.electron.calendar-clock",
-    "productName": "Calendar Clock",
+    "appId": "com.forborealis.compawnion",
+    "productName": "Compawnion",
     "win": {
       "target": "nsis",
       "icon": "assets/spriteDay_1.ico"

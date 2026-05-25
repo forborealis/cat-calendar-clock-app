@@ -1,6 +1,6 @@
-# Electron Calendar Clock
+# Compawnion
 
-A pixel-art desktop widget built with Electron that displays the current date and time. Features automatic day/night theming and an interactive cat sprite.
+Meet Compawnion! A pixel-art desktop widget built with Electron that displays the current date and time. Features automatic day/night theming and an interactive cat sprite.
 
 ## Preview
 
