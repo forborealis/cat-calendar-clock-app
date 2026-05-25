@@ -13,7 +13,7 @@ function createWindow() {
     fullscreenable: false,
     frame: false,
     transparent: false,
-    icon: "assets/spriteDay_1.png",
+    icon: "assets/spriteDay_1.ico",
     webPreferences: {
       contextIsolation: true
     }

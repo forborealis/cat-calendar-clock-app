@@ -1,9 +1,30 @@
 {
   "name": "electron-calendar-clock",
   "version": "1.0.0",
-  "description": "",
+  "description": "A pixel-art calendar and clock desktop widget",
+  "author": "forborealis",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.electron.calendar-clock",
+    "productName": "Calendar Clock",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/spriteDay_1.ico"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "script.js",
+      "styles.css",
+      "assets/**/*"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^42.2.0",
+    "electron-builder": "^26.8.1"
   }
 }
